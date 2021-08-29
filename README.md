@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-    Desafio 02 complementar para treinar o conceito de componentes React.
+    Desafio 02 complementar para treinar o conceito de componentes React. [Chapter I]
 </h3>
 
 <p align="center">
