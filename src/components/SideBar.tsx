@@ -3,6 +3,8 @@ import { api } from '../services/api';
 import { Button } from './Button';
 
 import '../styles/sidebar.scss';
+import { useCallback } from 'react';
+import { memo } from 'react';
 
 interface Genre {
   id: number;
@@ -23,9 +25,9 @@ export function SideBar({ selectedGenreId, setSelectedGenreId }: SideBarProps) {
     });
   }, []);
 
-  function handleClickButton(id: number) {
+  const handleClickButton = useCallback((id: number) => {
     setSelectedGenreId(id);
-  }
+  }, []);
 
   return (
     <nav className="sidebar">
